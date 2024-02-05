@@ -1,8 +1,5 @@
 {
-  "name": "@a7md3bdelfatta7/loreuikit",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/a7md3bdelfatta7"
-  },
+  "name": "lore-uikit",
   "version": "1.0.5",
   "description": "shared ui kit for lore micro frontends",
   "scripts": {
@@ -20,11 +17,7 @@
     "shared"
   ],
   "author": "Ahmed Abdelfattah",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/a7md3bdelfatta7/loreuikit/issues"
-  },
-  "homepage": "https://github.com/a7md3bdelfatta7/loreuikit#readme",
+  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
     "@rollup/plugin-node-resolve": "^15.2.1",

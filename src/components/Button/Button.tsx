@@ -2,21 +2,11 @@ import React from "react";
 
 export interface ButtonProps {
   label: string;
+  styles: { [key: string]: string };
 }
 
 const Button = (props: ButtonProps) => {
-  return (
-    <button
-      style={{
-        backgroundColor: "blue",
-        padding: "5px",
-        borderRadius: "5px",
-        color: "white",
-      }}
-    >
-      {props.label}
-    </button>
-  );
+  return <button style={props.styles}>{props.label}</button>;
 };
 
 export default Button;
