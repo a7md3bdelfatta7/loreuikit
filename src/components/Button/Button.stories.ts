@@ -24,6 +24,9 @@ export const Primary: Story = {
   args: {
     color: Colors.Primary,
     label: "Button",
+    onClick: () => {
+      alert("Primary button clicked!");
+    },
   },
 };
 
@@ -36,6 +39,7 @@ export const Secondary: Story = {
 
 export const Large: Story = {
   args: {
+    color: Colors.Danger,
     size: "large",
     label: "Large Button",
   },
@@ -43,6 +47,7 @@ export const Large: Story = {
 
 export const Small: Story = {
   args: {
+    color: Colors.Warning,
     size: "small",
     label: "Small Button",
   },
@@ -50,6 +55,7 @@ export const Small: Story = {
 
 export const Default: Story = {
   args: {
+    color: Colors.Success,
     size: "default",
     label: "Default Button",
   },
