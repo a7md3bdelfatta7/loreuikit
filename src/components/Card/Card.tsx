@@ -19,25 +19,31 @@ interface CardProps {
    * Card Color
    */
   color?: Colors;
+  title: string;
+  subTitle: string;
+  content: string;
 }
 
 /**
  * Primary UI component for user interaction
  */
-const Card = ({ color = Colors.Light, mediaURL }: CardProps) => {
+const Card = ({
+  color = Colors.Light,
+  mediaURL,
+  title,
+  subTitle,
+  content,
+}: CardProps) => {
   return (
     <LoreWrapper>
       <IonCard color={color} style={{ maxWidth: "500px" }}>
         <IonCardHeader>
           {mediaURL && <img alt="Silhouette of mountains" src={mediaURL} />}
-          <IonCardTitle>Card Title</IonCardTitle>
-          <IonCardSubtitle>Card Subtitle</IonCardSubtitle>
+          <IonCardTitle>{title}</IonCardTitle>
+          <IonCardSubtitle>{subTitle}</IonCardSubtitle>
         </IonCardHeader>
 
-        <IonCardContent>
-          Here's a small text description for the card content. Nothing more,
-          nothing less.
-        </IonCardContent>
+        <IonCardContent>{content}</IonCardContent>
       </IonCard>
     </LoreWrapper>
   );
