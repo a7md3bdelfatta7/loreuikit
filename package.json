@@ -18,7 +18,9 @@
     "kit",
     "shared"
   ],
-  "author": "Ahmed Abdelfattah",
+  "author": {
+    "name": "Ahmed Abdelfattah"
+  },
   "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.4",
@@ -34,6 +36,7 @@
     "@storybook/react-vite": "^7.6.13",
     "@storybook/test": "^7.6.13",
     "@types/react": "^18.2.21",
+    "chromatic": "^10.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rollup": "^3.29.1",
@@ -54,5 +57,9 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "bugs": {
+    "url": "https://github.com/a7md3bdelfatta7/loreuikit/issues"
+  },
+  "homepage": "https://github.com/a7md3bdelfatta7/loreuikit#readme"
 }
