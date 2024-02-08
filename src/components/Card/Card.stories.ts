@@ -11,7 +11,7 @@ const meta: Meta<typeof Card> = {
   },
   argTypes: {
     color: {
-      control: "inline-radio",
+      control: "radio",
       options: Colors,
     },
   },
