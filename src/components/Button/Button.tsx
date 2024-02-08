@@ -1,6 +1,6 @@
 import { IonButton } from "@ionic/react";
 import LoreWrapper from "../ComponentWrapper/LoreWrapper";
-import "./button.css";
+import "./button.scss";
 import Colors from "../../shared/enums/Colors.enum";
 
 interface ButtonProps {
