@@ -2,7 +2,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
-import scss from 'rollup-plugin-scss'
+import scss from "rollup-plugin-scss";
 
 // To handle css files
 import postcss from "rollup-plugin-postcss";
@@ -10,6 +10,8 @@ import postcss from "rollup-plugin-postcss";
 import terser from "@rollup/plugin-terser";
 
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
+
+import copy from "rollup-plugin-copy";
 
 const packageJson = require("./package.json");
 
@@ -38,13 +40,16 @@ export default [
       scss(),
       postcss(),
       terser(),
+      copy({
+        targets: [{ src: "src/css", dest: "lib" }],
+      }),
     ],
   },
   {
-    input: "dist/esm/types/index.d.ts",
-    output: [{ file: "dist/index.d.ts", format: "esm" }],
+    input: "lib/dist/esm/types/index.d.ts",
+    output: [{ file: "lib/index.d.ts", format: "esm" }],
     plugins: [dts.default()],
 
-    external: [/\.css$/,/\.scss$/], // telling rollup anything that is .css aren't part of type exports
+    external: [/\.css$/, /\.scss$/], // telling rollup anything that is .css aren't part of type exports
   },
 ];

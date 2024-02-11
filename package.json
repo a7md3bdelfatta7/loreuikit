@@ -1,13 +1,14 @@
 {
   "name": "lore-uikit",
-  "version": "1.0.8",
+  "version": "1.0.24",
   "description": "shared ui kit for lore micro frontends",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "rollup": "rollup -c --bundleConfigAsCjs",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "chromatic": "chromatic --exit-zero-on-changes"
+    "chromatic": "chromatic --exit-zero-on-changes",
+    "build": "npm run rollup"
   },
   "repository": {
     "type": "git",
@@ -49,16 +50,17 @@
   },
   "dependencies": {
     "@ionic/react": "^7.7.1",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
     "tslib": "^2.6.2"
   },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
+  "main": "lib/dist/cjs/index.js",
+  "module": "lib/dist/esm/index.js",
   "files": [
-    "dist"
+    "lib"
   ],
-  "types": "dist/index.d.ts",
+  "types": "lib/dist/index.d.ts",
   "bugs": {
     "url": "https://github.com/a7md3bdelfatta7/loreuikit/issues"
   },
