@@ -1,14 +1,11 @@
-# .github/workflows/chromatic.yml
+# .github/workflows/publish-package.yml
 
-name: "Chromatic"
+name: "Publish"
 
 on:
   push:
     branches:
-      - main
-  pull_request:
-    branches: 
-      - main 
+      - master
 
 jobs:
   chromatic:
@@ -21,8 +18,3 @@ jobs:
           fetch-depth: 0
       - name: Install dependencies
         run: npm ci
-
-      - name: Publish to Chromatic
-        uses: chromaui/action@latest
-        with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
