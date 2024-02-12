@@ -58,7 +58,7 @@
   "files": [
     "lib"
   ],
-  "types": "lib/dist/index.d.ts",
+  "types": "lib/index.d.ts",
   "bugs": {
     "url": "https://github.com/a7md3bdelfatta7/loreuikit/issues"
   },
