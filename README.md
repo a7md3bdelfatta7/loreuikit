@@ -42,8 +42,6 @@ npm run build-storybook
 ### Library folder structure
 
 ```
-
-
 .
 ├── src
 │   ├── components
