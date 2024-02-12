@@ -1,6 +1,6 @@
 {
   "name": "lore-uikit",
-  "version": "1.0.27",
+  "version": "1.0.28",
   "description": "shared ui kit for lore micro frontends",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,11 +1,10 @@
 # .github/workflows/publish-package.yml
 
-name: "publish"
+name: "publish to npm"
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [created]
 
 jobs:
   publish-package:
