@@ -1,6 +1,6 @@
 import React from "react";
 import "./card.scss";
-import LoreWrapper from "../ComponentWrapper/LoreWrapper";
+import LoreWrapper from "../LoreWrapper/LoreWrapper";
 import {
   IonCard,
   IonCardContent,
