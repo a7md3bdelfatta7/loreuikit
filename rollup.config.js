@@ -19,12 +19,12 @@ export default [
   {
     input: "src/index.ts",
     output: [
-      {
-        file: packageJson.main,
-        format: "cjs",
-        sourcemap: false,
-        inlineDynamicImports: true,
-      },
+      // {
+      //   file: packageJson.main,
+      //   format: "cjs",
+      //   sourcemap: false,
+      //   inlineDynamicImports: true,
+      // },
       {
         file: packageJson.module,
         format: "esm",
