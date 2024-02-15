@@ -41,7 +41,7 @@ export default [
       postcss(),
       terser(),
       copy({
-        targets: [{ src: "src/css", dest: "lib" }],
+        targets: [{ src: "src/shared/styles", dest: "lib" }],
       }),
     ],
   },
