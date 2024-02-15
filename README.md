@@ -1,10 +1,32 @@
-This package for shared component library based on [Ionic](https://ionicframework.com/) and [Material Design](https://m3.material.io/) concepts!
-
+This is React package for shared component library based on [Ionic](https://ionicframework.com/) and [Material Design](https://m3.material.io/) concepts!
 
 ### [Live Demo](https://65c50905b6cd6c7660b852ed-qmqbrigynn.chromatic.com/)
 
+## How to use this package
 
-## How to use
+install the package
+
+```
+npm i lore-uikit --save
+```
+
+import component
+
+```
+import {Button} from "lore-uikit";
+```
+
+then use the component
+
+```
+ <Button
+    onClick={() => {
+    //do anything
+    }}
+    label="Toggle Theme"
+/>
+```
+## How to run it locally
 
 after cloning this repo you have to run the following commands
 
@@ -38,20 +60,19 @@ npm run storybook
 npm run build-storybook
 ```
 
-
 ### Library folder structure
 
 ```
-.
 ├── src
 │   ├── components
 |   │   ├── Button
 |   |   │   ├── Button.tsx
 |   |   │   └── index.ts
 |   │   └── index.ts
+│   ├── Shared
+|   │   ├── enums
+|   │   ├── styles
 │   └── index.ts
 ├── package.json
 └── package-lock.json
 ```
-
-
