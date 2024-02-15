@@ -1,6 +1,6 @@
 This is React package for shared component library based on [Ionic](https://ionicframework.com/) and [Material Design](https://m3.material.io/) concepts!
 
-### [Live Demo](https://65c50905b6cd6c7660b852ed-qmqbrigynn.chromatic.com/)
+### [Live Demo](https://65c50905b6cd6c7660b852ed-xcrhmdrpwf.chromatic.com/)
 
 ## How to use this package
 
