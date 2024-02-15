@@ -20,7 +20,7 @@ interface CardProps {
    */
   color?: Colors;
   title: string;
-  subTitle: string;
+  subTitle: JSX.Element;
   content: string;
 }
 
@@ -38,7 +38,7 @@ const Card = ({
     <LoreWrapper>
       <IonCard color={color} style={{ maxWidth: "500px" }}>
         <IonCardHeader>
-          {mediaURL && <img alt="Silhouette of mountains" src={mediaURL} />}
+          {mediaURL && <img src={mediaURL} />}
           <IonCardTitle>{title}</IonCardTitle>
           <IonCardSubtitle>{subTitle}</IonCardSubtitle>
         </IonCardHeader>
