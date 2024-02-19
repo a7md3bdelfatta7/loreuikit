@@ -20,6 +20,10 @@ interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  /**
+   * determine if the button is disabled or not
+   */
+  disabled?: boolean;
 }
 
 /**
@@ -29,11 +33,12 @@ const Button = ({
   size = "default",
   color = Colors.Primary,
   label,
+  disabled = false,
   ...props
 }: ButtonProps) => {
   return (
     <LoreWrapper>
-      <IonButton size={size} onClick={props.onClick} color={color}>
+      <IonButton disabled={disabled} size={size} onClick={props.onClick} color={color}>
         {label}
       </IonButton>
     </LoreWrapper>

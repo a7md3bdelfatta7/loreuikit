@@ -60,3 +60,12 @@ export const Default: Story = {
     label: "Default Button",
   },
 };
+
+export const Disabled: Story = {
+  args: {
+    color: Colors.Primary,
+    size: "default",
+    label: "Disabled Button",
+    disabled: true,
+  },
+};
