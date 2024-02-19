@@ -24,6 +24,8 @@ interface ButtonProps {
    * determine if the button is disabled or not
    */
   disabled?: boolean;
+
+  expand?: "block" | "full"
 }
 
 /**
@@ -34,11 +36,12 @@ const Button = ({
   color = Colors.Primary,
   label,
   disabled = false,
+  expand,
   ...props
 }: ButtonProps) => {
   return (
     <LoreWrapper>
-      <IonButton disabled={disabled} size={size} onClick={props.onClick} color={color}>
+      <IonButton expand={expand} disabled={disabled} size={size} onClick={props.onClick} color={color}>
         {label}
       </IonButton>
     </LoreWrapper>

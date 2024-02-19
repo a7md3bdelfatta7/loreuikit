@@ -69,3 +69,12 @@ export const Disabled: Story = {
     disabled: true,
   },
 };
+
+export const ExpandBlock: Story = {
+  args: {
+    color: Colors.Danger,
+    size: "default",
+    label: "Expand Button",
+    expand: "block",
+  },
+};
